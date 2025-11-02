@@ -55,6 +55,14 @@ safe_input = input("Enter a Python expression (e.g. [1,2,3] or 10+5): ")
 result = eval(safe_input)
 print("Evaluated result:", result)
 print("Type of result:", type(result))
- 
+#correct input checking
+y=True
+while y==True:
+    x=input("Enter a number")
+    try:
+        x=float(x)
+        y=False
+    except:
+        print("You have entered invalid type")
 # End of demo
 print("\n All user input examples demonstrated successfully!")
